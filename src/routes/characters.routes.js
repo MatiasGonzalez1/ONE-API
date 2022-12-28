@@ -1,13 +1,15 @@
 import {Router} from 'express';
 
+import {getCharacters, deleteCharacters,postCharacters, putCharacters} from '../controllers/characters.controller.js'
+
 const router = Router()
 
-router.get('/characters', (req, res)=> res.send('Obteniendo personajes'))
+router.get('/characters', getCharacters)
 
-router.post('/characters', (req, res)=> res.send('Creando personajes'))
+router.post('/characters', postCharacters)
 
-router.put('/characters', (req, res)=> res.send('Actualizando personajes'))
+router.put('/characters', putCharacters)
 
-router.delete('/characters', (req, res)=> res.send('Eliminando personajes'))
+router.delete('/characters', deleteCharacters)
 
 export default router;
