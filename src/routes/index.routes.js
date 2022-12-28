@@ -1,12 +1,11 @@
 import {Router} from 'express';
-import {pool} from '../db.js'
+import { ping } from '../controllers/index.controller.js';
+
 const router = Router();
 
+
 //Se realiza la consulta a la db
-router.get('/ping',async (req,res)=> {
-  const [result] = await pool.query('SELECT * FROM characters')
-  res.json(result)
-});
+router.get('/ping', ping);
 
 export default router;
 
