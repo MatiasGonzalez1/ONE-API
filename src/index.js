@@ -4,6 +4,8 @@ import indexRoutes from './routes/index.routes.js'
 
 const app = express();
 
+app.use(express.json())
+
 //Conexion a la db
 app.use(indexRoutes)
 
