@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(indexRoutes)
 
 //Rutas
-app.use(charactersRoutes)
+app.use('/api',charactersRoutes)
 
 app.listen(3000)
 
