@@ -13,6 +13,10 @@ app.use(express.json())
 app.use(indexRoutes)
 
 //Rutas
+// app.use('/', (req, res)=>{
+//   res.send('Welcome to The One API')
+// })
+
 app.use('/api',charactersRoutes)
 
 app.use((req, res, next)=>{
