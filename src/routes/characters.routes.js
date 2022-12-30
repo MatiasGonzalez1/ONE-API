@@ -10,7 +10,7 @@ router.get('/characters/:id', getOneCharacter)
 
 router.post('/characters', postCharacters)
 
-router.put('/characters', putCharacters)
+router.patch('/characters/:id', putCharacters)
 
 router.delete('/characters/:id', deleteCharacters)
 
