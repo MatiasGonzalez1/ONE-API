@@ -1,17 +1,6 @@
-import express from "express";
-import charactersRoutes from './routes/characters.routes.js';
-import indexRoutes from './routes/index.routes.js'
+import {PORT} from './config.js'
+import app from './app.js'
 
-const app = express();
+app.listen(PORT)
 
-app.use(express.json())
-
-//Conexion a la db
-app.use(indexRoutes)
-
-//Rutas
-app.use('/api',charactersRoutes)
-
-app.listen(3000)
-
-console.log('Server running on port 3000')
+console.log(`Server running on port ${PORT}`)
