@@ -28,4 +28,11 @@ export const postCharacters = async (req, res)=> {
 
 export const putCharacters = (req, res)=> res.send('Actualizando personajes')
 
-export const deleteCharacters = (req, res)=> res.send('Eliminando personajes')
+export const deleteCharacters = async (req, res)=> {
+  const [result] = await pool.query('DELETE FROM characters WHERE id_character = ?', [req.params.id])
+  
+  if(result.affectedRows <= 0) return res.status(404).json({
+    message: 'Character not found'
+  })
+  res.sendStatus(204)
+}

@@ -12,6 +12,6 @@ router.post('/characters', postCharacters)
 
 router.put('/characters', putCharacters)
 
-router.delete('/characters', deleteCharacters)
+router.delete('/characters/:id', deleteCharacters)
 
 export default router;
