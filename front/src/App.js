@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <div className='contenedor-principal'>
         <h1>ONE API</h1>
-        {characters.map((personaje, i)=>(
+        {characters ? (characters.map((personaje, i)=>(
         <Card key={i}
         nombre={personaje.name}
         lastName = {personaje.last_name}
@@ -31,7 +31,7 @@ function App() {
         empresa='Sombreros de Paja'
         recompensa='1'
         />    
-        ))}
+        ))) : 'Cargando'}
            
       </div>
     </div>
