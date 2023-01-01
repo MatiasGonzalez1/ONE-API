@@ -11,7 +11,7 @@ const Card = (props) => {
     alt={props.alt}/>
     <div className='contenedor-texto-card'>
       <p className='nombre-card'>
-       <strong>{props.nombre}</strong>  de {props.procedencia}
+       <strong>{props.lastName} {props.nombre}</strong> de {props.procedencia}
       </p>
       <p className='cargo-card'>{props.cargo} de los <strong>{props.empresa}</strong></p>
       <p className='texto-card'>Recompensa actual: <em>{props.recompensa}</em> Berries</p>
