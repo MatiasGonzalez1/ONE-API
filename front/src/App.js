@@ -1,8 +1,22 @@
 import './App.css';
 import Card from './components/Card.js';
+import Request from './utils/Request.js';
+import React, { useState, useEffect } from "react";
+
 
 function App() {
-  return (
+  // const [characters, setCharacters] = useState(null);
+
+  useEffect(() => {
+    fetch(`${Request}}`)
+      .then((response) => response.json())
+      .then((characters) => {
+        console.log(characters)
+        // setCharacters(products.products);
+      });
+  }, []);
+  
+  return ( 
     <div className="App">
       <div className='contenedor-principal'>
         <h1>ONE API</h1>
@@ -14,16 +28,7 @@ function App() {
         cargo='Capitan'
         empresa='Sombreros de Paja'
         recompensa='1'
-        />
-         <Card
-        nombre='Roronoa Zoro'
-        procedencia='East Blue'
-        img='2'
-        alt='Foto persona 1'
-        cargo='Espadachin'
-        empresa='Sombreros de Paja'
-        recompensa='1'
-        />           
+        />       
       </div>
     </div>
   );
