@@ -1,6 +1,6 @@
 .contenedor-card{
-    width: 45%;
-    height: 300px;
+    width: 40%;
+    height: auto;
     margin: 10px 10px 50px;
     display: flex;
     flex-wrap: wrap;
@@ -11,8 +11,8 @@
 }
 
 .imagen-card{
-    height: 100%;
-    width: 40%;
+    height: 300px;
+    width: 250px;
 }
 
 .contenedor-texto-card{
