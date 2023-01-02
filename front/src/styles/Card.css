@@ -1,6 +1,6 @@
 .contenedor-card{
     width: 40%;
-    height: auto;
+    height: 400px;
     margin: 10px 10px 50px;
     display: flex;
     flex-wrap: wrap;
@@ -11,29 +11,29 @@
 }
 
 .imagen-card{
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 150px;
 }
 
 .contenedor-texto-card{
     text-emphasis: center;
-    padding: 40px;
+    padding: 10px;
     font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 1.2rem;
 }
 
 .nombre-card{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .cargo-card{
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-top: 15px;
     padding-bottom: 30px;
 }
 
 .texto-card{
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
 }

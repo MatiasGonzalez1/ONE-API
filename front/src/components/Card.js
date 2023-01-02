@@ -15,14 +15,14 @@ const Card = (props) => {
           <strong>
             {props.lastName} {props.nombre}
           </strong>{' '}
-          de {props.procedencia}
+          from {props.procedencia}
         </p>
 
         <p className="cargo-card">
-          {props.cargo} de los <strong>{props.empresa}</strong>
+          {props.cargo} of the <strong>{props.empresa}</strong>
         </p>
         <p className="texto-card">
-          Recompensa actual: <em>{props.recompensa}</em> Berries
+          Reward: <em>{props.recompensa}</em> Berries
         </p>
       </div>
     </div>

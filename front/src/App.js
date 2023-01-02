@@ -24,12 +24,12 @@ function App() {
         <Card key={i}
         nombre={personaje.name}
         lastName = {personaje.last_name}
-        procedencia='East Blue'
+        procedencia={personaje.origin}
         img='1'
         alt='Foto personaje 1'
-        cargo='Capitan'
-        empresa='Sombreros de Paja'
-        recompensa='1'
+        cargo={personaje.position}
+        empresa={personaje.crew}
+        recompensa={personaje.reward}
         />    
         ))) : 'Cargando'}
            
