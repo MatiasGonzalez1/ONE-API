@@ -1,17 +1,17 @@
 .contenedor-card{
-    width: 40%;
-    height: 400px;
-    margin: 10px 10px 50px;
+    width: 35%;
+    height: 250px;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    box-shadow: 0 3px 8px 1px rgb(0 0 0 / 9%);
 }
 
 .imagen-card{
-    height: 200px;
+    height: 150px;
     width: 150px;
 }
 
@@ -36,4 +36,9 @@
 .texto-card{
     font-size: 1rem;
     text-align: center;
+}
+
+.contenedor-card:hover{
+    background: black;
+    color: #fff;
 }
