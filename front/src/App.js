@@ -3,6 +3,7 @@ import Card from './components/Card.js';
 import Request from './utils/Request.js';
 import React, { useState, useEffect } from "react";
 import img from './img/logo.png';
+import Loader from './components/Loader';
 
 function App() {
   const [characters, setCharacters] = useState(null);
@@ -16,26 +17,26 @@ function App() {
       });
   }, []);
   
-  return (    
-    <div className="App">
-      <div className='contenedor-principal'>
-        <h1>THE<img className='one' src={img}/>NE API</h1>
-        {characters ? (characters.map((personaje, i)=>(
-        <Card key={i}
-        nombre={personaje.name}
-        lastName = {personaje.last_name}
-        procedencia={personaje.origin}
-        img='1'
-        alt='Foto personaje 1'
-        cargo={personaje.position}
-        empresa={personaje.crew}
-        recompensa={personaje.reward}
-        />    
-        ))) : 'Cargando'}
-           
-      </div>
-    </div>
-  );
+    if (!characters)
+      return <Loader/>;
+      return( 
+        <div className="App">
+          <div className='contenedor-principal'>
+            <h1>THE<img className='one' src={img} alt='icono one piece'/>NE API</h1>
+            
+            {characters.map((personaje, i)=>(
+            <Card key={i}
+            nombre={personaje.name}
+            lastName = {personaje.last_name}
+            procedencia={personaje.origin}
+            img='1'
+            alt='Foto personaje 1'
+            cargo={personaje.position}
+            empresa={personaje.crew}
+            recompensa={personaje.reward}
+            />))}
+          </div>
+        </div>)
 }
 
 export default App;

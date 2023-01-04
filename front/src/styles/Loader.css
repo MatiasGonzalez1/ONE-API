@@ -1,0 +1,29 @@
+.contenedor{
+  margin: auto;
+}
+
+.loader{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.circle{
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+}
+
+.loader p{
+  position: relative;
+  top: 150px;
+  margin: auto;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.loader span{
+  position: relative;
+  top: 170px;
+  left: 200px;
+  }
+
