@@ -7,7 +7,7 @@ const Card = (props) => {
       <img
         className="imagen-card"
         // src={require('../img/Luffy-PNG-Transparent-HD-Photo.png')}
-        src={require(`../img/${props.img}.png`)}
+        src={require(`../img/${props.img}.webp`)}
         alt={props.alt}
       />
       <div className="contenedor-texto-card">

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
 .contenedor{
   margin: auto;
 }
@@ -16,9 +18,12 @@
 
 .loader p{
   position: relative;
+  width: 60%;
   top: 150px;
   margin: auto;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Passions Conflict', cursive;;
 }
 
 .loader span{

@@ -2,7 +2,7 @@ import './App.css';
 import Card from './components/Card.js';
 import Request from './utils/Request.js';
 import React, { useState, useEffect } from "react";
-import img from './img/logo.png';
+import img from './img/logo.webp';
 import Loader from './components/Loader';
 
 function App() {
