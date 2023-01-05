@@ -6,9 +6,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.139);
+    border-radius: 5px;
     box-shadow: 0 3px 8px 1px rgb(0 0 0 / 9%);
     position: relative;
+    cursor: pointer;
 }
 
 .imagen-card{
@@ -40,6 +42,38 @@
 }
 
 .contenedor-card:hover{
-    background: black;
-    color: #fff;
+    background: rgba(192, 192, 192, 0.307);
+}
+
+@media (max-width: 1200px) {
+    .contenedor-card{
+        width: 55%;
+    }
+}
+
+@media (max-width: 913px) {
+    .contenedor-card{
+        width: 60%;
+    }
+
+    .nombre-card{
+        font-size: .8rem;
+    }
+    
+    .cargo-card{
+        font-size: .8rem;
+        margin-top: 15px;
+        padding-bottom: 20px;
+    }
+    
+    .texto-card{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-card{
+        width: 80%;
+        height: auto;
+    }
 }
