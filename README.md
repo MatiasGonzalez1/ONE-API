@@ -14,7 +14,7 @@
 
 ## Deploy API:
 
-https://one-api-backend.vercel.app/api/
+https://one-api-backend.vercel.app/
 
 ## Deploy Front:
 
